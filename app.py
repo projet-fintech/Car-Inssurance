@@ -53,9 +53,9 @@ def predict():
     average_prediction = np.mean(list(predictions.values()))
 
     return jsonify({
-        # "individual_predictions": predictions,
-        # "ensemble_prediction": average_prediction,
-        "message": f"The predicted insurance cost is USD {average_prediction:.2f}"
+        # "individual_predictions": predictions
+        "ensemble_prediction": average_prediction
+        # "message": f"The predicted insurance cost is USD {average_prediction:.2f}"
     })
 
 
