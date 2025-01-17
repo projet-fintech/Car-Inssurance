@@ -14,7 +14,7 @@ pipeline {
                 checkout scmGit(
                     branches: [[name: '*/main']],
                     extensions: [],
-                    userRemoteConfigs: [[credentialsId: 'ser3elah', url: 'git@github.com:projet-fintech/Car-Inssurance.git']]
+                    userRemoteConfigs: [[credentialsId: 'ser3elah', url: 'https://github.com/projet-fintech/Car-Inssurance.git']]
                 )
             }
         }
